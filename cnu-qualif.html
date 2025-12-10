@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseils Qualification MCF - CNU 61</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --link-color: #2980b9;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --content-bg: #ffffff;
+            
+            --highlight-color: #fffacd;
+            --highlight-border: #ffd700;
+            --critical-bg: #ffe6e6; 
+            --critical-border: #000000; /* Black Border */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 250px 1fr; /* Sidebar width vs Content width */
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            position: sticky; /* Keeps menu visible while scrolling */
+            top: 40px;
+            height: fit-content;
+            background: var(--content-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: var(--text-color);
+            display: block;
+            padding: 5px 0;
+            transition: color 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .main-content {
+            background: var(--content-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1 { margin-top: 0; color: var(--primary-color); }
+        h2 { color: var(--primary-color); margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        
+        .content-link {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link-color);
+            font-weight: 500;
+        }
+        .content-link:hover {
+            border-bottom: 1px solid var(--link-color);
+            background-color: #eef7fc;
+        }
+
+        .highlight, mark {
+            background-color: var(--highlight-color);
+            padding: 2px 4px;
+            border-radius: 4px;
+            border-bottom: 2px solid var(--highlight-border);
+            color: #000;
+        }
+
+        .critical-block {
+            background-color: var(--critical-bg);
+            border: 2px solid var(--critical-border);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        .critical-block h3 { margin-top: 0; color: #d8000c; }
+
+        .table-container {
+            overflow-x: auto; /* Adds scrollbar for mobile */
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+
+        table thead tr {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: left;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        table tbody tr:nth-of-type(even) {
+            background-color: #f9f9f9; /* Zebra striping */
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .faq-section { margin-top: 50px; padding-top: 20px; border-top: 2px solid #eee; }
+        details { margin-bottom: 10px; border: 1px solid #e0e0e0; border-radius: 5px; }
+        summary { padding: 15px; cursor: pointer; background-color: #fcfcfc; font-weight: bold; }
+        .faq-content { padding: 15px; background: #fff; border-top: 1px solid #e0e0e0; }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .wrapper { grid-template-columns: 1fr; } /* Stack sidebar on top */
+            .sidebar { position: static; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <nav class="sidebar">
+            <h3>Aller à
+            <ul>
+                <li><a href="#intro">1. Introduction</a></li>
+                <li><a href="#consignes">2. Consignes</a></li>
+                <li><a href="#critères">3. Critères</a></li>
+                <li><a href="#faq">4. FAQ</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h1>✈️ Conseils Qualification MCF - CNU 61</h1>
+                <p><em>Mise à jour Décembre 2025</em></p>
+            </header>
+
+            <section id="intro">
+                <h2>1. Introduction</h2>
+                <p>
+                    L'objectif de cette page est de vous aider à envoyer un dossier de qualification MCF complet et de bonne qualité. Pour la campagne de qualification 2024-2025, 20 % des dossiers ont été refusés car incomplets. C'est regrettable car une partie non-négligeable de ces dossiers étaient vraisemblablement d'une bonne qualité et ils auraient pu remplir les critères de qualification si les candidats avaient fourni toutes les pièces demandées. Voici donc comment faire pour éviter un refus certain. 
+
+		<div class="critical-block">
+                    <h3>⚠️ Attention</h3>
+                    <p>
+                        Les informations se trouvant sur cette page sont des avis personnels, et ne représentent aucunement l'avis officiel de la section 61 du CNU qui est contenu sur sa  <a href="https://conseil-national-des-universites.fr/cnu/#/entite/entiteName/CNU/idChild/33/idNode/4243-4270" class="content-link">page</a>. Vous êtes libre de suivre ou pas les conseils que j'ai formulés, et je ne suis pas responsable ni du succès ni de l'échec éventuels de votre candidature de qualification.
+                    </p>
+                </div>
+                </p>
+            </section>
+
+
+            <section id="consignes">
+                <h2>2. Lecture des consignes</h2>
+                <p>
+                    Les candidats doivent tout simplement <strong>lire attentivement et suivre intègralement</strong> les consignes indiquées dans l'<a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037308181">arrêté</a> réglementaire <strong>ET</strong> sur la <a href="https://conseil-national-des-universites.fr/cnu/#/entite/entiteName/CNU/idChild/33/idNode/4243-4270" class="content-link">page</a> de la section 61 qui spécifie les pièces dites complémentaires mais qui restent obligatoires pour la demande de qualification en section 61. Le plus souvent il s'agit de l'absence des rapports de pré-soutenance et/ou des contrats d'enseignement/attestations d'heures enseignées. 
+
+		<div class="critical-block">
+                    <h3>⚠️ Attention</h3>
+                    <p>
+                        Souvent vous n'êtes plus en contact direct avec votre équipe d'encadrement de thèse car vous êtes en post-doc, ATER ailleurs, industrie. N'hésitez pas à leur demander de diagonaliser votre dossier complet avant de l'envoyer. C'est peu probable qu'ils refusent de vous rendre ce service même s'ils sont très pris par ailleurs, et cela représente un garde-fou supplémentaire qui réduirait sûrement le taux d'échec des dossiers. 
+                    </p>
+                </div>
+                </p>
+            </section>
+
+	
+            <section id="critères">
+                <h2>3. Les critères de qualification</h2>
+                <p>
+                    Certains critères sont précis, mais une partie d'eux sont définis à partir d'un seuil indicatif. Cela engendre une zone grise autour du seuil, ce qui justifie le travail de concertation du comité qui va juger un dossier dans son intégralité. Si votre dossier est moins solide sur certains critères, essayez de fournir dans votre dossier rédigé des explications claires et concises qui seraient utiles lors de l'évaluation. Les éléments qui peuvent nécessiter des explications supplémentaires sont : 
+	<ul>
+	<li> un cumul d'heures d'enseignement se situant en dessous du nombre attendu, spécifié sur la page de la section
+	<li> l'absence d'un article de revue satisfaisant les critères spécifiés sur la page de la section. Une dérogation est possible si la durée de la thèse est nominale (3 ans) <strong>ET</strong> si la soutenance est très récente. Si depuis le début de la thèse il y a significativement plus de 36 mois qui se sont écoulés sans qu'il y ait au moins une publication en revue comme au dessus, des explications seront nécessaires. 
+		<div class="critical-block">
+                    <h3>⚠️ Attention</h3>
+                    <p>
+                        Veuillez indiquer clairement la date de début de la thèse dans votre dossier, elle est nécessaire pour évaluer l'applicabilité de la dérogation. 
+                    </p>
+                </div>
+	<li> le positionnement des travaux/publication à la frontière des thématiques de la section
+		<div class="critical-block">
+                    <h3>⚠️ Attention</h3>
+                    <p>
+                        Pour des travaux en lien avec la section 61, le jury de thèse inclut très souvent au moins un membre de la section. L'absence totale des membres de la section 61 dans le jury est un élément qui peut indiquer une activité hors section, et implique surtout l'absence de l'évaluation des travaux par un représentant de nos thématiques. 
+                    </p>
+                </div>
+	</ul>
+
+                </p>
+            </section>
+
+            <section id="faq" class="faq-section">
+                <h2>❓ Frequently Asked Questions</h2>
+                <details>
+                    <summary>Pour quelle raison est-ce que les candidats ont besoin d'envoyer les rapports de pré-soutenance pour la section 61?</summary>
+                    <div class="faq-content">
+                        <p>Un très bon niveau scientifique des travaux peut compenser certains critères qui se trouvent dans la '"zone grise" (voir dessus). Les membre du comité n’évaluent pas la qualité scientifique de votre dossier directement (c.a.d. en lisant l'ensemble de vos publications et le manuscrit de thèse), mais indirectement. Pour cette evaluation indirecte,  les rapports de pré-soutenance sont très pertinents, et par consequent on les demande systématiquement. Le rapport sera d'autant plus précieux s'il est fait par un membre de la section 61 (mais ce n'est pas indispensable).</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Mes encadrants de thèse ne sont pas de la section 61, est-ce que cela met en péril ma qualification?</summary>
+                    <div class="faq-content">
+                        <p>Pas forcement, cela n’empêche pas qu'au moins une partie des contributions méthodologiques se situent sur les thématiques de la section 61, mais il faudra le souligner dans le dossier. Les publications dans des revues reconnues de la section restent le meilleur indicateur. Historiquement, les travaux des sections 26, 27, 60 et 63 peuvent proposer des contributions pertinentes pour notre section. </p>
+                    </div>
+                </details>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
